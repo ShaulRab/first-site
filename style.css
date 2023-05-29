@@ -20,14 +20,22 @@ button {
     border-radius: 4px;
     font-size: 1.025rem;
     cursor: pointer;
-    transition: opacity 500ms, border 500ms;
+    transition: opacity 500ms, border 500ms, box-shadow 1000ms, color 600ms;
+    box-shadow: 5px 5px 0 rgb(0, 24, 71);
 }
 
 button:hover {
     opacity: 0.85;
-    border: 2px solid rgb(165, 165, 165);
+    border: 2px solid rgb(115, 115, 115);
+    box-shadow: 5px 5px 0 rgb(255, 255, 255);
 }
 
+button:active {
+    opacity: .85;
+    border: 2px solid rgb(165, 165, 165);
+    box-shadow: 5px 5px 0 rgb(161, 166, 175);
+    color: var(--accent-color)
+}
 .primary-button {
     background-color: var(--primary-color);
     border: 2px solid black;

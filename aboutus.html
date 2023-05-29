@@ -58,16 +58,20 @@
         </div>
 
         <h2>Be in contact</h2>
-        <div class="wrapper accent p-shadow">
+        <div class="accent p-shadow" id="feedbaack-box">
             <fieldset style="border: 0;">
-                <legend>Contact us...</legend>
-                <label for="name">Name:</label>
-                <input type="text" name="name" required>
-                <label for="email">Email:</label>
-                <input type="email" name="email" required>
-                <label for="feedback"></label>
-                <textarea name="feedback" placeholder="Type your feedback here..." cols="21" rows="5"></textarea>
-                <button class="button primary-button ">SEND FEEDBACK</button>
+                <form action="">
+                    <legend>Contact us...</legend>
+                    <label for="name">Name:</label>
+                    <input type="text" name="name" required>
+                    <label for="email">Email:</label>
+                    <input type="email" name="email" required>
+                    <label for="feedback">Feedback:</label>
+                    <textarea name="feedback" placeholder="Type your feedback here..." cols="21" rows="5" required></textarea>
+                    <label for="newsletter">Would you like to sign up for our newspaper?</label>
+                    <input type="checkbox" name="newsletter">
+                    <button type="submit" class="button primary-button">SEND FEEDBACK</button>
+                </form>
             </fieldset>
         </div>
 

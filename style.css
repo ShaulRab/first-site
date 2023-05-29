@@ -3,6 +3,7 @@
     font-family: Oswald, system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     color: white;
     box-sizing: border-box;
+    font-size: 1.125rem;
 }
 body {
     background-color: rgb(94, 161, 232);
@@ -12,7 +13,6 @@ body {
     --primary-color: rgb(7, 68, 190);
     --secondary-color: rgb(106, 78, 177);
     --accent-color: rgb(150, 52, 161);
-
 }
 
 button {
@@ -28,11 +28,11 @@ button:hover {
     border: 2px solid rgb(165, 165, 165);
 }
 .primary-button {
-    background-color: var(--primary-color)
+    background-color: var(--primary-color);
     border: 2px solid black;
 }
 .secondary-button {
-    background-color: var(--secondary-color)
+    background-color: var(--secondary-color);
     border: 2px solid black;
 }
 
@@ -46,6 +46,7 @@ button:hover {
 .p-shadow:hover {
     box-shadow: 5px 5px 0 rgb(52, 52, 52);
 }
+
 nav {
     display: flex;
     justify-content: space-around;
@@ -65,20 +66,46 @@ nav {
     text-decoration: underline;
     opacity: .8;
 }
+.nav-active {
+    border-top: 2px solid white;
+    border-bottom: 2px solid white;
+}
+
+.story-box {
+    margin-left: 2rem;
+    margin-right: 2rem;
+
+}
 
 .story {
-    background-color: var(--accent-color)
+    background-color: var(--accent-color);
     padding: .3rem .8rem;
     border-radius: 4px;
     margin: .3rem;
     margin-bottom: .8rem;
 }
+/* index.html */
+h1 {
+    text-align: center;
+    font-size: 2.5rem;
+}
+h2 {
+    font-size: 1.5rem;
+}
+.mixed {
+    display: flex;
+    flex: 1fr 400px;
+}
+
 /* photos.hmtl */
 .image-grid {
+    max-width: 1100px;
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
     gap: 1.2rem;
     margin: 3rem;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .image {
@@ -94,7 +121,7 @@ nav {
     text-align: center;
 }
 
-img {
+.image > img {
     width: 97%;
     height: 80%;
     object-fit: cover;
@@ -103,4 +130,70 @@ img {
     margin-top: 5px;
     margin-left: 5px;
     margin-right: 5px;
+}
+
+/* aboutus.html */
+.team-box {
+    max-width: 15000px;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(500px, 1fr));
+    column-gap: 2rem;
+    row-gap: 2rem;
+    margin-left: 2rem;
+    margin-right: 2rem;
+}
+.member {
+    width: minmax(400px, 600px);
+    display: flex;
+    background-color: var(--accent-color);
+    margin-bottom: .8rem;
+    border-radius: 5px;
+    padding: .5rem;
+}
+.profile> img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-right: 2rem;
+    cursor: pointer;
+}
+.profile> p {
+    text-align: center;
+    transition: all 500ms;
+}
+.profile> p:hover {
+    text-decoration: underline;
+    cursor: pointer;
+    opacity: .8;
+}
+/* location.hmtl */
+h5 {
+    text-align: center;
+}
+
+.location-box {
+    margin-left: 2rem;
+    margin-right: 2rem;
+    display: flex;
+}
+
+.location {
+    max-width: 900px;
+    background-color: var(--accent-color);
+    margin: 1rem;
+    border-radius: 10px;
+    padding: 5px;
+    text-align: center;
+}
+
+.location > img {
+    padding: 10px;
+    width: 100%;
+    height: 400px;
+    object-fit: cover;
+    border-radius: 20px;
+}
+.description {
+    padding: .8rem;
 }

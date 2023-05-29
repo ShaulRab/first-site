@@ -1,0 +1,68 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200;300;400;500;600;700&display=swap');
+* {
+    font-family: Oswald, system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    color: white;
+    box-sizing: border-box;
+}
+body {
+    background-color: rgb(94, 161, 232);
+}
+
+button {
+    padding: .6rem 1rem;
+    border-radius: 4px;
+    font-size: 1.025rem;
+    cursor: pointer;
+    transition: opacity 500ms, border 500ms;
+
+}
+button:hover {
+    opacity: 0.85;
+    border: 2px solid rgb(165, 165, 165);
+}
+.primary-button {
+    background-color: rgb(7, 68, 190);
+    border: 2px solid black;
+}
+.secondary-button {
+    background-color: rgb(106, 78, 177);
+    border: 2px solid black;
+}
+
+.p-shadow {
+    box-shadow: 5px 5px 0 rgb(0, 24, 71);
+    transition: box-shadow 500ms;
+    margin-right: 0.2rem;
+    margin-bottom: 0.2rem;
+}
+
+.p-shadow:hover {
+    box-shadow: 5px 5px 0 rgb(52, 52, 52);
+
+
+}
+nav {
+    display: flex;
+    justify-content: space-around;
+    border-bottom: 2px solid white;
+    border-top: 2px solid white;
+}
+
+.nav-link {
+    text-decoration: none;
+    transition: text-decoration 500ms, opacity 250ms;
+    padding-top: .5rem;
+    padding-bottom: .5rem;
+}
+
+.nav-link:hover {
+    text-decoration: underline;
+    opacity: .8;
+}
+
+.story {
+    background-color: rgb(150, 52, 161);
+    padding: .3rem .8rem;
+    border-radius: 4px;
+    margin: .3rem;
+}

@@ -90,6 +90,9 @@ nav {
     background-color: var(--accent-color);
 }
 
+.center {
+    text-align: center;
+}
 
 /* index.html */
 
@@ -199,6 +202,10 @@ label {
     margin-top: 1rem;
 }
 
+#checkbox-label {
+    display: inline;
+}
+
 input {
     color: black;
     padding: .5rem;
@@ -212,12 +219,18 @@ textarea {
     display: block;
     margin-bottom: .5rem;
 }
+
 legend {
     padding: 1em;
 }
+
 fieldset {
     padding: 1em;
     margin-bottom: 2rem;
+}
+
+form > button {
+    margin-top: 1rem;
 }
 /* location.hmtl */
 h5 {
